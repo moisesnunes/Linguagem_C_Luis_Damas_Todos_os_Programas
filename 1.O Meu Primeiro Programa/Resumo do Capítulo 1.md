@@ -22,6 +22,6 @@ As linhas começadas por **(#include,#define**,etc.) não são C, mas sim direti
 
 A representação de caracteres especiais ou de caracteres que, de outra forma, seriam difíceis de representar faz-se através de um conjunto de dois ou mais caracteres, sendo em geral o primeiro caractere a barra invertida (\--Backslash).
 
-Os **comentários** são escritos entre /_ e _/ e são simplesmente ignorados pelo compilador (a menos que se encontrem dentro de um **string**).
+Os **comentários** são escritos entre /** e **/ e são simplesmente ignorados pelo compilador (a menos que se encontrem dentro de um **string**).
 
 Não podem existir comentários dentro de comentários.
