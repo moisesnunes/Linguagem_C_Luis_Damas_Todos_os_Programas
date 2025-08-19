@@ -1,3 +1,5 @@
+> Capítulo 2 - Resumo
+
 A linguagem C apresenta quatro tipos de dados básicos - **char,int,float** e **double**.
 
 Podemos declarar variáveis de cada um desses tipos para armazenar valores. Depois de declarada, uma variável fica com um valor aleatório.
