@@ -1,45 +1,48 @@
-> Escreva um programa em C que apresente a seguinte saída:
-
-1 - Clientes
-2 - Fornecedores
-3 - Faturas
-
-0 - Sair
+> Escreva um programa em C que peça ao usúario dois inteiros e apresente o resultado da realização das operações aritméticas tradicionais.
 
 ```c
 #include <stdio.h>
+
 main()
 {
-    printf("1 - \tClientes\n"); /* \t para colocar uma tabulação */
-    printf("2 - \tFornecedores\n");
-    printf("3 - \tFaturas\n\n"); /* Mais uma linha em Branco */
-    printf("0 - \tSair\n");
+    int a, b;
+    printf("Introduza dois Inteiros: ");
+    scanf("%d%d", &a, &b);
+    printf("%d + %d = %d\n", a, b, a + b);
+    printf("%d - %d = %d\n", a, b, a - b);
+    printf("%d * %d = %d\n", a, b, a * b);
+    printf("%d / %d = %d\n", a, b, a / b);
+    printf("%d %% %d = %d\n", a, b, a % b);
 }
 ```
 
-> Escreva um programa em C que apresente duas linhas com a _string_ "Aqui vai um Apito", ouvindo-se ao final de cada _string_ um sinal sonoro.
+> Escreva um programa em C que solicite um determinado número de segundos e, em seguida, indique quantas horas, minutos e segundos esse valor representa.
 
 ```c
 #include <stdio.h>
 
 main()
 {
-    printf("Aqui vai um Apito\a\n"); /* \a sinal sonoro */
-    printf("Aqui vai um Apito\7\n"); /* \7 ou \a representam o mesmo caractere */
+    long int n_segundos;
+    printf("Introduza n N° de segundos: ");
+    scanf("%ld", &n_segundos);
+    printf("Horas : %d\n", (int)n_segundos / 3600);
+    printf("Minutos : %d\n", (int)n_segundos % 3600 / 60);
+    printf("Segundos : %d\n", (int)n_segundos % 60);
 }
 ```
 
-> Escreva um programa em C que indique qual o significado dos seguintes caracteres especiais: \n, \\, \t, %%.
+> Escreva um programa em C que solicite um determinado número real e mostre qual a sua parte inteira e a sua parte fracionária.
 
 ```c
 #include <stdio.h>
 
 main()
 {
-    printf("Programa que apresenta os Caracteres Especiais\n\n");
-    printf("\\n\t-\t<ENTER>\n"); /* Saída: \n - <ENTER> */
-    printf("\\\\\t-\t\\\n");     /* Saída: \\ - \       */
-    printf("\\t\t-\t<TAB>\n");   /* Saída: \t - <TAB>   */
-    printf("%%%%\t-\t%%\n");     /* Saída: %% - % */
+    float x;
+    printf("Introduza um N° real: ");
+    scanf("%f", &x);
+    printf("Parte Inteira: %d\n", (int)x);
+    printf("Parte Fracionaria: %f\n", x - ((int)x));
 }
 ```

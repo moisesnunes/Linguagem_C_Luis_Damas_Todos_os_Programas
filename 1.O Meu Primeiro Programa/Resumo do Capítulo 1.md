@@ -1,3 +1,5 @@
+> Capítulo 1 - Resumo
+
 Em C, um programa começa com a funão **main()**.
 
 O código a executar é colocar entre {}.

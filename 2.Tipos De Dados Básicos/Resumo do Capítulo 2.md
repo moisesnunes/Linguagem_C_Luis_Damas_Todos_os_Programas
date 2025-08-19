@@ -10,7 +10,7 @@ Uma variável pode ser iniciada assim que é declarada, colocando o sinal de atr
 
 O nome de uma variável deverá sempre representar a informação que ela contém.
 
-Qualquer operação entre inteiros devolve sempre um resultado inteiro. As operações mais comuns são: a soma (+), a subtração (-), a multiplicação |(\*), a divisão inteira (/) e o resto da divisão (%), também conhecido por módulo.
+Qualquer operação entre inteiros devolve sempre um resultado inteiro. As operações mais comuns são: a soma (+), a subtração (-), a multiplicação (\*), a divisão inteira (/) e o resto da divisão (%), também conhecido por módulo.
 
 Os reais também podem ser submetidos às operações anteriores, à exceção do módulo (%).
 
