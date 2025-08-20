@@ -105,7 +105,7 @@ main()
 #include <stdio.h>
 main()
 {
-            int n;
+    int n;
     scanf("Introduza um N° %d", &n);
     printf("O n° = %d\n", n);
 }
@@ -117,7 +117,7 @@ main()
 #include <stdio.h>
 main()
 {
-            int n;
+    int n;
     printf("Introduza um N°");
     scanf("%d\n", &n);
     printf("O n° = %d\n", n);
@@ -130,7 +130,7 @@ main()
 #include <stdio.h>
 main()
 {
-            int n;
+    int n;
     printf("Introduza um N°");
     scanf("%f", &n);
     printf("O n° = %f\n", n);
