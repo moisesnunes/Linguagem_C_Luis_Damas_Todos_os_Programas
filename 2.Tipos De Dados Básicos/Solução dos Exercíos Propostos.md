@@ -65,15 +65,14 @@
     - 7.1 A variável x foi declarada duas vezes.
     - 7.2 int é uma palavra reservada e, como tal, não pode ser usada como identificador de uma variável.
     - 7.3 Atribuições em cascata (como x=y=z=0;) só podem ser realizadas depois de as variáveis terem sido todas declaradas.
-
-          Deveria ter feito
+      Deveria ter feito
 
 ```c
 int x,y,z;
 x = y = z = 0;
 ```
 
-         ou então
+ou então
 
 ```c
 int x=0 , y=0, z=0;
@@ -133,3 +132,5 @@ main()
     printf("Data Completa: %d/%d/%d\n", dia, mes, ano);
 }
 ```
+
+Nesse caso, para realizar a leitura completa de uma data pode-se indicar no formato de leitura da função scanf qual o caractere separador entre os vários componentes. O utilizador é então obrigado a colocar o caractere '-' entre os vários componentes a serem lidos.
