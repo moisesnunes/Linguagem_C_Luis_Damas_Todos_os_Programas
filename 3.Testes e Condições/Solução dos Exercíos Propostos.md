@@ -26,23 +26,25 @@ O trecho da direita não faz um teste, mas uma atribuição do valor zero a x. C
 9. Um compilador não faz qualquer tipo de verificação da indentação.
 
 10. Vantagens:
-    O if permite o teste de condições que não estão limitidas a valores constantes
+
+O if permite o teste de condições que não estão limitidas a valores constantes
 
 ```c
 if (x>y)
 ``
 ```
 
-    A instrução if permite a utilização de mais de uma condição
+A instrução if permite a utilização de mais de uma condição
 
 ```c
 if (x>10 && x<100)...
 ```
 
-    Desvantagens:
-    Quando o número de condições é muito elevado, if-else encadeados podem tornar o código particularmente confuso.
+Desvantagens:
 
-    O switch permite encadear diversos case, controlando-os com a instrulção break.
+Quando o número de condições é muito elevado, if-else encadeados podem tornar o código particularmente confuso.
+
+O switch permite encadear diversos case, controlando-os com a instrulção break.
 
 11. Não se pode utilizar a instrução break num if. A instrução break pode apenas ser utilizada no switch e em laços.
 
@@ -50,6 +52,8 @@ if (x>10 && x<100)...
     - b) Verdade
     - c) Verdade
     - d) Verdade
+
+---
 
 13. - a) Falso
     - b) Verdade
