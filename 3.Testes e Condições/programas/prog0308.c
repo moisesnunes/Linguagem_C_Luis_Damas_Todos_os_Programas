@@ -16,7 +16,7 @@ main()
 
 /* Programa com indentação correta */
 
-main()
+main() 
 {
     int a, b;
     printf("Introduza dois n°s: ");
