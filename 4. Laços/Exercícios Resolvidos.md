@@ -3,11 +3,12 @@
 > Escreva um programa em C que escreva na tela toda a tabela ASCII(0..255 chars), escrevendo em cada linha o código ASCII e o caractere correspondente.
 
 **Exemplo**:
-...
-65 --> A
-66 --> B
-67 --> C
-...
+
+    ...
+    65 --> A
+    66 --> B
+    67 --> C
+    ...
 
 ```c
 #include <stdio.h>
@@ -30,12 +31,12 @@ Em geral, os compiladores conseguem detectar essa situação e apresentam um _Wa
 
 **Exemplo**:
 
-Introd. um N°: 5
-1 5
-2 4
-3 3
-4 2
-5 1
+    Introd. um N°: 5
+    1 5
+    2 4
+    3 3
+    4 2
+    5 1
 
 ```c
 #include <stdio.h>
@@ -103,12 +104,12 @@ Nota: Não esquecer o espaço em branco antes de %c para retirar o <<ENTER>> que
 
 **Exemplo**:
 
-Introd. um N°: 13
-13
-14
-16
-17
-19
+    Introd. um N°: 13
+    13
+    14
+    16
+    17
+    19
 
 ```c
 #include <stdio.h>
