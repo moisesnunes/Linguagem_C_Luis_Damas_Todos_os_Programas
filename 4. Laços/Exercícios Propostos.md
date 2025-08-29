@@ -23,15 +23,15 @@
    - 1.19 No laço while, antes de se executar a instrução continue, deve-se atualizar a variável de controle do laço.
    - 1.20 Qualquer dos laços pode ser sempre escrito a partir do laço while.
 
-2. Escreva genericamente o laço do...while como um laço while.
+2. Escreva genericamente o laço **do...while** como um laço **while**.
 
-3. Escreva genericamente o for do...while como um laço while.
+3. Escreva genericamente o laço **for** como um laço **while**.
 
-4. Escreva genericamente o laço while como um laço for.
+4. Escreva genericamente o laço **while** como um laço **for**.
 
-5. Qual a diferença de execução da instrução break quando presente em um for e em um while?
+5. Qual a diferença de execução da instrução **break** quando presente em um **for** e em um **while**?
 
-6. Qual a diferença de execução da instrução continue quando presente em um for e em um while?
+6. Qual a diferença de execução da instrução **continue** quando presente em um **for** e em um **while**?
 
 7. Reescreva o seguinte trecho de um programa, utilizando o laço while:
 
