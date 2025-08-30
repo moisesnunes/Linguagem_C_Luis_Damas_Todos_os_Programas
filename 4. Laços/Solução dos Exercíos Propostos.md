@@ -107,5 +107,98 @@ while (i <= 20)
         printf("%d\n", i);
     i++;
     }
-
 ```
+
+8.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int i, j, n;
+
+    printf("Qual o N° de Ramos: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= i; j++)
+            putchar('*');
+        putchar('\n');
+    }
+}
+```
+
+Notar que o laço externo indica qual o número de linhas que vamos mostrar (n linhas). No entanto, cada uma das linhas tem que mostrar apenas o número de asteriscos igual ao número da linha em questão, de forma a mostrar um triângulo.
+
+Dessa forma, o laço interno terá que iterar apenas um número de vezes igual ao número da linha em que se está nessa altura. Depois de escritos todos os asteriscos de uma linha, é necessário mudar de linha.
+
+Este é um exemplo típico de um laço interno cujo número de iterações depende do valor da variável de controle do laço externo.
+
+9.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int i, j, n;
+
+    printf("Qual o N° de Ramos: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= i; j++)
+            putchar('A' + i - 1);
+        putchar('\n');
+    }
+}
+```
+
+Repare que na primeira linha queremos escrever a letra 'A', na segunda a letra 'B' (que é igual a 'A'+1) e assim sucessivamente. Podemos, assim, usar uma variável que controla as linhas para ir acrescentando uma unidade ao caractere a ser escrito em cada uma das linhas. No entanto, como a variável i começa com o valor 1 e não 0, como seria desejável para escrever a letra 'A' na primeira linha,somos obrigados a subtrair uma unidade a cada caractere escrito para obter o caractere correto.
+
+10.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int n;
+    do
+    {
+        printf("Introd. um N°: ");
+        scanf("%d", &n);
+    } while (n < 1 || n > 100);
+    printf("Foi Introduzido o n° %d\n", n);
+}
+```
+
+11.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int i, conta;
+    char ch;
+    for (i = 0, conta = 1; i <= 255; i++)
+    {
+        printf("%3d --> %c\n", i, (char)i);
+        if (conta == 20)
+        {
+            do
+            {
+                printf("Pressione c ou C para continuar ...");
+                scanf(" %c", &ch);
+            } while (ch != 'c' && ch != 'C');
+            conta = 1;
+        }
+        else
+            conta++;
+    }
+}
+```
+
+12.
