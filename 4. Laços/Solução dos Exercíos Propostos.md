@@ -245,7 +245,7 @@ printf("%d %d", i, x);          printf("%d %d", i, x);
 
 15. Não. Esses operadores só podem ser utilizados em variáveis.
 
-16. Na expressão a = -2 a variável recebe o valor -2. Na expressão a -= 2o valor de a é determinado em duas unidades. Lembrar que a -= 2 é equivalente a a = a -2.
+16. Na expressão a = -2 a variável recebe o valor -2. Na expressão a -= 2 o valor de a é determinado em duas unidades. Lembrar que a -= 2 é equivalente a a = a -2.
 
 17. O programa vai (teoricamente) num laço infinito, pois o teste do laço é realizado apenas depois de a variável ser incrementada, nunca sendo por isso igual a zero. Notar que se trata de um laço do...while.
 
@@ -263,21 +263,25 @@ No exemplo da direita o valor de i é incrementado antes de ser disponibilizado 
 
 19. O laço, em cada uma das 200 iterações, executa a sua instrução. Nessa caso executa 200 vezes a instrução vazia que é representada pelo ponto-e-vírgula, que provavelmente o programador colocou após o for por engano. Só em seguida escreve o valor de i, que é igual a 201.
 
-20. 1. 20 vezes
-    2. 10 vezes (para os valores de i = 1,3,5,7,9,11,13,15,17,19)
-    3. 41 vezes (20-(-20)+1)
-    4. 50 vezes (10\*5)
+20.
 
-21. |              | x   | y   | z   |
-    | ------------ | --- | --- | --- |
-    |              | 5   | 10  | 7   |
-    | x++          | 6   | 10  | 7   |
-    | y\*=(z++ +2) | 6   | 90  | 8   |
-    | y=!x         | 6   | 0   | 8   |
-    | z=(x%2)+ --y | 6   | -1  | -1  |
-    | z=(x==y)     | 6   | -1  | 0   |
-    | !z           | 6   | -1  | 0   |
-    | z=z%8        | 6   | -1  | 6   |
+- 1 20 vezes
+- 2 10 vezes (para os valores de i = 1,3,5,7,9,11,13,15,17,19)
+- 3 41 vezes (20-(-20)+1)
+- 4 50 vezes (10\*5)
+
+21.
+
+|              | x   | y   | z   |
+| ------------ | --- | --- | --- |
+|              | 5   | 10  | 7   |
+| x++          | 6   | 10  | 7   |
+| y\*=(z++ +2) | 6   | 90  | 8   |
+| y=!x         | 6   | 0   | 8   |
+| z=(x%2)+ --y | 6   | -1  | -1  |
+| z=(x==y)     | 6   | -1  | 0   |
+| !z           | 6   | -1  | 0   |
+| z=z%8        | 6   | -1  | 6   |
 
 Notar que !z não coloca em z o valor lógico contrário ao que z tem, pois uma variável só é alterada quando fazemos alguma atribuição. Exemplo: z = !z; ou quando se usam os operadores ++ ou --.
 
