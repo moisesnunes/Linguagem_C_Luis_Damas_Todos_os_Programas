@@ -47,13 +47,13 @@ for (i = 1; i <= 20; i++)
 
 Exemplos com 3, 4 e 5 ramos:
 
-![](ex.pro.9.png)
+![](./img/ex.pro.9.png)
 
 9. Altere o programa anterior de forma que, em vez de asteriscos, sejam escritas letras em cada nível, começando o nível inicial com a letra 'A'.
 
 Exemplos com 3, 4 e 5 ramos:
 
-![](ex.pro.8.png)
+![](./img/ex.pro.8.png)
 
 10. Escreva um programa que solicite um número ao usuário até que o valor deste esteja entre os valores 1 e 100.
 
@@ -74,13 +74,13 @@ A fim de que o usuário possa ver todos os caracteres escritos, a tela deve ser 
 **Exemplo**:
 
     ...
-    Introd. dois N°: 65 120
+    Introd. um N° entre 0 e 255: 65 120
     65 --> A
     66 --> B
     67 --> C
     ...
     ...
-    Introd. dois N°: 120 65
+    Introd. outro  N° entre 0 e 255: 120 65
     65 --> A
     66 --> B
     67 --> C
@@ -128,7 +128,7 @@ while (++i)
 19. O que faz o seguinte código:
 
 ```c
-for (i = 1; i <= 20; i++) ;
+for (i = 1; i <= 200; i++) ;
     printf("%d\n", i);
 ```
 
@@ -168,4 +168,13 @@ for (j = 1; j <= 5; j++) ...
 
 nota: Devem ser utilizados os valores alterados das variáveis em cada uma das linhas.
 
-![](ex.pro.21.png)
+|              | x   | y   | z   |
+| ------------ | --- | --- | --- |
+|              | 5   | 10  | 7   |
+| x++          |     |     |     |
+| y\*=(z++ +2) |     |     |     |
+| y=!x         |     |     |     |
+| z=(x%2)+ --y |     |     |     |
+| z=(x==y)     |     |     |     |
+| !z           |     |     |     |
+| z=z%8        |     |     |     |

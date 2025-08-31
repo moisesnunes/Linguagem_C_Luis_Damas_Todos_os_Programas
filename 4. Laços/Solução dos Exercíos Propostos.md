@@ -202,3 +202,83 @@ main()
 ```
 
 12.
+
+```c
+#include <stdio.h>
+
+main()
+{
+    int i, nmin, nmax, tmp;
+
+    do
+    {
+        printf("Introd. um N° entre 0 e 255: ");
+        scanf("%d", &nmin);
+    } while (nmin < 0 || nmin > 255);
+    do
+    {
+        printf("Introd. outro  N° entre 0 e 255: ");
+        scanf("%d", &nmax);
+    } while (nmax < 0 || nmax > 255);
+    /* Verificar se é necessário trocar os valores das variáveis */
+    if (nmin > nmax)
+    {
+        tmp = nmin;
+        nmin = nmax;
+        nmax = tmp;
+    }
+    for (i = nmin; i <= nmax; i++)
+        printf("%3d --> %c\n", i, (char)i);
+}
+```
+
+13. Na primeira instrução x recebe o valor de i já incrementado, enquanto na segunda instrução o valor de i só é incrementado depois de atribuído a x.
+
+```c
+i = 5;                          i = 5;
+x = ++i;                        x = i++;
+printf("%d %d", i, x);          printf("%d %d", i, x);
+/* Mostra 6 6 */                /* Mostra 6 5 */
+```
+
+14. Sim.
+
+15. Não. Esses operadores só podem ser utilizados em variáveis.
+
+16. Na expressão a = -2 a variável recebe o valor -2. Na expressão a -= 2o valor de a é determinado em duas unidades. Lembrar que a -= 2 é equivalente a a = a -2.
+
+17. O programa vai (teoricamente) num laço infinito, pois o teste do laço é realizado apenas depois de a variável ser incrementada, nunca sendo por isso igual a zero. Notar que se trata de um laço do...while.
+
+18. A diferença entre os dois trechos do código está na altura em que a variável i é incrementada e em qual é o valor que entra para o teste da condição do laço while.
+
+```c
+i = 0;                              i = 0;
+while (i++)                         while (++i)
+    printf("%d\n,i");                   printf("%d\n,i");
+```
+
+No exemplo da esquerda o valor de i é usada no teste do while. Como i tem o valor zero (Falso), o laço termina imediatamente, não sendo o printf executado. Na instrução seguinte, o valor de i é igual a 1.
+
+No exemplo da direita o valor de i é incrementado antes de ser disponibilizado ao laço. Assim, no primeiro teste da condição o valor de i vai ser igual a 1 e não zero como no exemplo anterior, pois o incremento é realizado antes da utilização da variável. Mais uma vez estamos diante de um laço (teoricamente) infinito, pois a condição é sempre diferente de zero.
+
+19. O laço, em cada uma das 200 iterações, executa a sua instrução. Nessa caso executa 200 vezes a instrução vazia que é representada pelo ponto-e-vírgula, que provavelmente o programador colocou após o for por engano. Só em seguida escreve o valor de i, que é igual a 201.
+
+20. 1. 20 vezes
+    2. 10 vezes (para os valores de i = 1,3,5,7,9,11,13,15,17,19)
+    3. 41 vezes (20-(-20)+1)
+    4. 50 vezes (10\*5)
+
+21. |              | x   | y   | z   |
+    | ------------ | --- | --- | --- |
+    |              | 5   | 10  | 7   |
+    | x++          | 6   | 10  | 7   |
+    | y\*=(z++ +2) | 6   | 90  | 8   |
+    | y=!x         | 6   | 0   | 8   |
+    | z=(x%2)+ --y | 6   | -1  | -1  |
+    | z=(x==y)     | 6   | -1  | 0   |
+    | !z           | 6   | -1  | 0   |
+    | z=z%8        | 6   | -1  | 6   |
+
+Notar que !z não coloca em z o valor lógico contrário ao que z tem, pois uma variável só é alterada quando fazemos alguma atribuição. Exemplo: z = !z; ou quando se usam os operadores ++ ou --.
+
+A instrução !z; não faz rigorasamente nada. Em princípio, o compilador emite o correspondente aviso.

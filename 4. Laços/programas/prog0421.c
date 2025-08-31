@@ -2,21 +2,11 @@
 
 main()
 {
-    int i, conta;
-    char ch;
-    for (i = 0, conta = 1; i <= 255; i++)
+    int n;
+    do
     {
-        printf("%3d --> %c\n", i, (char)i);
-        if (conta == 20)
-        {
-            do
-            {
-                printf("Pressione c ou C para continuar ...");
-                scanf(" %c", &ch);
-            } while (ch != 'c' && ch != 'C');
-            conta = 1;
-        }
-        else
-            conta++;
-    }
+        printf("Introd. um N°: ");
+        scanf("%d", &n);
+    } while (n < 1 || n > 100);
+    printf("Foi Introduzido o n° %d\n", n);
 }
