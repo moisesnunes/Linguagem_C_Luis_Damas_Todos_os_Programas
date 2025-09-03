@@ -265,10 +265,10 @@ No exemplo da direita o valor de i é incrementado antes de ser disponibilizado 
 
 20.
 
-- 1 20 vezes
-- 2 10 vezes (para os valores de i = 1,3,5,7,9,11,13,15,17,19)
-- 3 41 vezes (20-(-20)+1)
-- 4 50 vezes (10\*5)
+- 1 - 20 vezes
+- 2 - 10 vezes (para os valores de i = 1,3,5,7,9,11,13,15,17,19)
+- 3 - 41 vezes (20-(-20)+1)
+- 4 - 50 vezes (10\*5)
 
 21.
 
