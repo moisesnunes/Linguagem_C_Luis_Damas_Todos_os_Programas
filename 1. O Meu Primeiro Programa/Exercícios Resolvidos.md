@@ -2,11 +2,11 @@
 
 \> Escreva um programa em C que apresente a seguinte saída:
 
-1 - Clientes
-2 - Fornecedores
-3 - Faturas
+    1 - Clientes
+    2 - Fornecedores
+    3 - Faturas
 
-0 - Sair
+    0 - Sair
 
 ```c
 #include <stdio.h>
@@ -19,7 +19,7 @@ main()
 }
 ```
 
-> Escreva um programa em C que apresente duas linhas com a _string_ "Aqui vai um Apito", ouvindo-se ao final de cada _string_ um sinal sonoro.
+\> Escreva um programa em C que apresente duas linhas com a _string_ "Aqui vai um Apito", ouvindo-se ao final de cada _string_ um sinal sonoro.
 
 ```c
 #include <stdio.h>

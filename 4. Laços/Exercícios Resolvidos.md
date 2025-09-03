@@ -27,7 +27,7 @@ Note que se fosse declarada uma variável do tipo char para percorrer todos os c
 
 Em geral, os compiladores conseguem detectar essa situação e apresentam um _Warning_ (não um erro) para avisar que foi detectado um laço infinito ou uma condição sempre verdadeira.
 
-> Escreva um programa que solicite ao usúario um número e escreva simultaneamente a sequência crescente e descrecente entre 1 e esse número.
+\> Escreva um programa que solicite ao usúario um número e escreva simultaneamente a sequência crescente e descrecente entre 1 e esse número.
 
 **Exemplo**:
 
@@ -71,7 +71,7 @@ main()
 **Exemplo**:
 
     Introd. um N°: 3
-    ntrod. um Char: *
+    Introd. um Char: *
     ***
     ***
     ***

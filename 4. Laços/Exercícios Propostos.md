@@ -35,7 +35,7 @@
 
 7. Reescreva o seguinte trecho de um programa, utilizando o laço while:
 
-```c
+```
 for (i = 1; i <= 20; i++)
     if (i == 10)
         continue;
@@ -88,7 +88,7 @@ A fim de que o usuário possa ver todos os caracteres escritos, a tela deve ser 
 
 13. Qual a diferença (se existir) entre as duas seguintes instruções:
 
-```c
+```
 x = ++i e x = i++
 ```
 

@@ -27,7 +27,7 @@
 
 do...while
 
-```c
+```
 do
     instrução;
 while (condição);
@@ -35,7 +35,7 @@ while (condição);
 
 while
 
-```c
+```
 condição_aux = Verdade;
 while (condição || condição_aux)
     instrução;
@@ -45,14 +45,14 @@ while (condição || condição_aux)
 
 for
 
-```c
+```
 for (inic; condição; pos-inst)
     instrução
 ```
 
 while
 
-```c
+```
 inic;
 while (condição)
     {intrução;
@@ -64,14 +64,14 @@ while (condição)
 
 while
 
-```c
+```
 while (condição)
     instrução;
 ```
 
 for
 
-```c
+```
 for (; condição ;)
     instrução
 ```

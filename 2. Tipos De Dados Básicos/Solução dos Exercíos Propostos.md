@@ -2,7 +2,7 @@
 
 1. Indique quais das seguintes declarações estão corretas.
 
-```c
+```
     - a) y int;                        // ERRO: Sintaxe Incorreta
     - b) int;                          // ERRO: Falta a Variável
     - c) integer x;                    // ERRO: integer não é um tipo de C
@@ -18,7 +18,7 @@
 
 3. Indique, na seguinte lista, quais os identificadores corretos e incorretos de variáveis:
 
-```c
+```
     - a) Valor       // OK
     - b) &xvar       // ERRO: Caractere inicial inválido
     - c) dez%        // ERRO: Caractere final inválido
@@ -40,7 +40,7 @@
 
 5. Associe os seguintes tipos aos correspondentes formatos de leitura e escrita.
 
-```c
+```
     int                 %d
     float               %f ou %e
     char                %c
@@ -67,14 +67,14 @@
     - 7.3 Atribuições em cascata (como x=y=z=0;) só podem ser realizadas depois de as variáveis terem sido todas declaradas.
       Deveria ter feito
 
-```c
+```
 int x,y,z;
 x = y = z = 0;
 ```
 
 ou então
 
-```c
+```
 int x=0 , y=0, z=0;
 ```
 

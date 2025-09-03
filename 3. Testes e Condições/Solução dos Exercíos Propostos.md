@@ -29,14 +29,13 @@ O trecho da direita não faz um teste, mas uma atribuição do valor zero a x. C
 
 O if permite o teste de condições que não estão limitidas a valores constantes
 
-```c
+```
 if (x>y)
-``
 ```
 
 A instrução if permite a utilização de mais de uma condição
 
-```c
+```
 if (x>10 && x<100)...
 ```
 
@@ -62,7 +61,7 @@ O switch permite encadear diversos case, controlando-os com a instrulção break
 
 14.
 
-```c
+```
 if (x == 0 && y <= 32)
     printf("Sucesso!!!");
 ```
@@ -134,7 +133,9 @@ main()
 
 ```
 
-19. - 19.1
+19.
+
+- 19.1
 
 ```c
 #include <stdio.h>

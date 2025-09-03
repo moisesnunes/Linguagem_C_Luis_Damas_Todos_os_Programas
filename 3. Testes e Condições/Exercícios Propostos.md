@@ -53,7 +53,7 @@ else                 else
 
 12. Qual o valor lógico que as seguintes expressões enviam para o _if_?
 
-```c
+```
     - a) if (10 == 5)
     - b) if ((2+3) == -(-2 -3))
     - c) if (x = 5)
@@ -62,7 +62,7 @@ else                 else
 
 13. Suponha x=4, y=6 e z=-1, qual o valor lógico das seguintes expressões:
 
-```c
+```
     - a) if (x == 5)
     - b) if (x == 5 || z < 0)
     - c) if (y - x +z -1)
@@ -71,7 +71,7 @@ else                 else
 
 14. Escreva, utilizando um único _if_, o seguinte código:
 
-```c
+```
 if (x == 0)
     if (y <= 32)
         printf("Sucesso!!!");
