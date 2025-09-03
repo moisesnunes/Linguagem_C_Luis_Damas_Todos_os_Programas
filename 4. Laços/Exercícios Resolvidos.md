@@ -1,6 +1,6 @@
 > Capítulo 4 - Exercícios Resolvidos
 
-> Escreva um programa em C que escreva na tela toda a tabela ASCII(0..255 chars), escrevendo em cada linha o código ASCII e o caractere correspondente.
+\> Escreva um programa em C que escreva na tela toda a tabela ASCII(0..255 chars), escrevendo em cada linha o código ASCII e o caractere correspondente.
 
 **Exemplo**:
 
@@ -51,7 +51,7 @@ main()
 }
 ```
 
-> Resolva o mesmo problema utilizando apenas duas variáveis.
+\> Resolva o mesmo problema utilizando apenas duas variáveis.
 
 ```c
 #include <stdio.h>
@@ -66,7 +66,7 @@ main()
 }
 ```
 
-> Escreva um programa que solicite ao usúario um número e um caractere. Em seguida, terá que preencher n linhas, cada um delas com n caracteres.
+\> Escreva um programa que solicite ao usúario um número e um caractere. Em seguida, terá que preencher n linhas, cada um delas com n caracteres.
 
 **Exemplo**:
 
@@ -100,7 +100,7 @@ main()
 
 Nota: Não esquecer o espaço em branco antes de %c para retirar o <<ENTER>> que ficou no buffer do teclado, depois de introduzido o inteiro.
 
-> Escreva um programa que solicite ao usúario um número. Em seguida escreva todos os números inteiros a partir desse número, exceto os múltiplos de 3. Quando encontrar o primeiro múltiplo de 10 a execução termina.
+\> Escreva um programa que solicite ao usúario um número. Em seguida escreva todos os números inteiros a partir desse número, exceto os múltiplos de 3. Quando encontrar o primeiro múltiplo de 10 a execução termina.
 
 **Exemplo**:
 

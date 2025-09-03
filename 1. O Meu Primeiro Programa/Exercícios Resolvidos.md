@@ -1,6 +1,6 @@
 > Capítulo 1 - Exercícios Resolvidos
 
-> Escreva um programa em C que apresente a seguinte saída:
+\> Escreva um programa em C que apresente a seguinte saída:
 
 1 - Clientes
 2 - Fornecedores
@@ -31,7 +31,7 @@ main()
 }
 ```
 
-> Escreva um programa em C que indique qual o significado dos seguintes caracteres especiais: \n, \\, \t, %%.
+\> Escreva um programa em C que indique qual o significado dos seguintes caracteres especiais: \n, \\, \t, %%.
 
 ```c
 #include <stdio.h>

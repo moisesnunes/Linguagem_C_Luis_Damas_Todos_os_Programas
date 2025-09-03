@@ -1,6 +1,6 @@
 > Capítulo 3 - Exercícios Resolvidos
 
-> Escreva um programa que indique quantos segundos tem um determinado número de horas.
+\> Escreva um programa que indique quantos segundos tem um determinado número de horas.
 
 ```c
 #include <stdio.h>
@@ -25,7 +25,7 @@ Escolhemos a constante 3600 para promover a _long_. Essa promoção pode ser rea
 
 Notar que esse tipo de _casting_ só pode ser realizado com constantes. Para variáveis teremos que realizar o _casting_ normal (long) var, pois um **L** junto ao nome da variável iria alterar o nome desta.
 
-> Altere o programa anterior de tal forma que permita indicar, a partir de um determinado número de horas, quais os minutos, os segundos ou mesmo os décimos de segundo que esse número de horas contém.
+\> Altere o programa anterior de tal forma que permita indicar, a partir de um determinado número de horas, quais os minutos, os segundos ou mesmo os décimos de segundo que esse número de horas contém.
 
 ```c
 #include <stdio.h>
@@ -49,7 +49,7 @@ main()
 }
 ```
 
-> Resolva o mesmo enunciado utilizando um switch.
+\> Resolva o mesmo enunciado utilizando um switch.
 
 ```c
 #include <stdio.h>
@@ -82,7 +82,7 @@ main()
 }
 ```
 
-> Resolva o mesmo enunciado utilizando o switch, mas sem qualquer break. Suponha que o número de horas está corretamente escrito.
+\> Resolva o mesmo enunciado utilizando o switch, mas sem qualquer break. Suponha que o número de horas está corretamente escrito.
 
 ```c
 #include <stdio.h>
