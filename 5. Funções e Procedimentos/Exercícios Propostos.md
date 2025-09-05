@@ -2,30 +2,32 @@
 
 1. Indique se são verdadeiras ou falsas as seguintes afirmações:
 
-   a) Uma função em C pode devolver simultaneamente mais do que um valor.
-   b) Uma função em C pode não ter parâmetros.
-   c) Uma função em C tem que devolver sempre um inteiro.
-   d) Os parâmetros das funções podem ser do tipo void.
-   e) A instrução return termina a execução de uma função.
-   f) Uma variável local a uma função pode ter o mesmo nome que um parâmetro.
-   g) A instrução return termina a execução de uma função apenas se for a última instrução da função em que se encontra.
-   h) A instrução return, quando executada dentro de qualquer função, termina o programa.
-   i) A instrução return, quando executada dentro da função main, termina o programa.
-   j) O nome de uma função é opcional.
-   k) Os parâmetros numa função são opcionais.
-   l) Uma função deve fazer o maior número de tarefas possíveis sem ocupar muito código.
-   m) Uma função não deve ter mais do que 10 linhas.
-   n) O nome de uma função não deve ter mais do que 6 letras.
-   o) O nome de uma função não pode ser uma reservada do C.
-   p) Sempre que necessário devem ser utilizadas variáveis locais.
-   q) Um protótipo não é nada mais que a repetição do cabeçalho da função seguido de;.
-   r) Em C, um procedimento não é mais do que uma função que "retora void".
+   - a) Uma função em C pode devolver simultaneamente mais do que um valor.
+   - b) Uma função em C pode não ter parâmetros.
+   - c) Uma função em C tem que devolver sempre um inteiro.
+   - d) Os parâmetros das funções podem ser do tipo void.
+   - e) A instrução return termina a execução de uma função.
+   - f) Uma variável local a uma função pode ter o mesmo nome que um parâmetro.
+   - g) A instrução return termina a execução de uma função apenas se for a última instrução da função em que se encontra.
+   - h) A instrução return, quando executada dentro de qualquer função, termina o programa.
+   - i) A instrução return, quando executada dentro da função main, termina o programa.
+   - j) O nome de uma função é opcional.
+   - k) Os parâmetros numa função são opcionais.
+   - l) Uma função deve fazer o maior número de tarefas possíveis sem ocupar muito código.
+   - m) Uma função não deve ter mais do que 10 linhas.
+   - n) O nome de uma função não deve ter mais do que 6 letras.
+   - o) O nome de uma função não pode ser uma reservada do C.
+   - p) Sempre que necessário devem ser utilizadas variáveis locais.
+   - q) Um protótipo não é nada mais que a repetição do cabeçalho da função seguido de;.
+   - r) Em C, um procedimento não é mais do que uma função que "retora void".
 
-2. Identifique os erros de compilação que seriam detectados nos seguintes programas:
+2.
+
+Identifique os erros de compilação que seriam detectados nos seguintes programas:
 
 2.1
 
-```c
+```
 f(int x, int y)
 {
     x = 4;
@@ -35,7 +37,7 @@ f(int x, int y)
 
 2.2
 
-```c
+```
 void f(int x, int y)
 {
     return -1;
@@ -44,7 +46,7 @@ void f(int x, int y)
 
 2.3
 
-```c
+```
 void f(void);
 void f(int x, int y)
 {
@@ -55,7 +57,7 @@ void f(int x, int y)
 
 2.4
 
-```c
+```
 f(int x, int y);
 void f(int x, int y)
 {
@@ -66,7 +68,7 @@ void f(int x, int y)
 
 2.5
 
-```c
+```
 void (int x, int y)
 {
     x = 4;
@@ -76,7 +78,7 @@ void (int x, int y)
 
 2.6
 
-```c
+```
 void f(int x, y)
 {
     x = 4;
@@ -146,8 +148,8 @@ int Abs(int x)
 
 Devolve o valor absoluto de x.
 
-    Abs(-5) --> 5
-    Abs(5)  --> 5
+    Abs(-5)     --> 5
+    Abs(5)      --> 5
 
 5.
 
@@ -185,7 +187,8 @@ Semelhante à função anterior, só que recebe mais um parâmetro indicando aqu
     num(3, 'm')         --> 180
     num(3, 's')         --> 10800
 
-//\* Resolva este exercício de três formas distintas: com a instrução _if-else, switch_ com _break e switch_ sem _break_ \*//
+/\* Resolva este exercício de três formas distintas: com a instrução _if-else, switch_ com _break e switch_ sem _break_ \*/
+
 Nota: Supõe-se que o tipo está sempre correto.
 
 8.
@@ -214,16 +217,16 @@ Verifica se x se encontra no intervalo **lim_inf <= x <= lim_sup**
 
 11. Escreva as seguintes funções
 
-| Função                    | Devolve                                                                                  |
-| ------------------------- | ---------------------------------------------------------------------------------------- |
-| 11.1 int isdigit(char c)  | Verdade caso c seja um dígito. Falso, caso contrário.                                    |
-| 11.2 int isalpha(char c)  | Verdade caso c seja um letra do alfabeto, maiúscula ou minúscula. Falso, caso contrário. |
-| 11.3 int isalnum(char c)  | Verade caso c seja um dígito ou uma letra do alfabeto. Falso, caso contrário.            |
-| 11.4 int islower(char c)  | Verdade caso c seja uma letra minúscula. Falso, caso contrário.                          |
-| 11.5 int isupper(char c)  | Verdade caso c seja uma letra maiúscula. Falso, caso contrário.                          |
-| 11.6 int isspace(char c)  | Verdade caso c seja um espaço ou TAB. Falso, caso contrário.                             |
-| 11.7 char tolower(char c) | Devolve o valor do caractere c transformado em minúsculas.                               |
-| 11.8 char toupper(char c) | Devolve o valor do caractere c transformado em maiúsculas.                               |
+| Função               | Devolve                                                                                  |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| int isdigit(char c)  | Verdade caso c seja um dígito. Falso, caso contrário.                                    |
+| int isalpha(char c)  | Verdade caso c seja um letra do alfabeto, maiúscula ou minúscula. Falso, caso contrário. |
+| int isalnum(char c)  | Verade caso c seja um dígito ou uma letra do alfabeto. Falso, caso contrário.            |
+| int islower(char c)  | Verdade caso c seja uma letra minúscula. Falso, caso contrário.                          |
+| int isupper(char c)  | Verdade caso c seja uma letra maiúscula. Falso, caso contrário.                          |
+| int isspace(char c)  | Verdade caso c seja um espaço ou TAB. Falso, caso contrário.                             |
+| char tolower(char c) | Devolve o valor do caractere c transformado em minúsculas.                               |
+| char toupper(char c) | Devolve o valor do caractere c transformado em maiúsculas.                               |
 
 Nota:
 Para ter acesso às funções apresentadas no exercício 11 bastará incluir no início do seu programa a linha
@@ -273,4 +276,4 @@ Devolve o valor de x^3.
 int IsVogal(char ch)
 ```
 
-Verifica se ch é uma das vogais do alfabeto (minúscula ou maiúscula)
+Verifica se ch é uma das vogais do alfabeto (minúscula ou maiúscula).
