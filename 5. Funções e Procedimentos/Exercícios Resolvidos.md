@@ -137,23 +137,23 @@ a) tiro(1)
 
 Ao invocar a função _tiro_ com o argumento 1, o _switch_ vai entrar pelo _case 1_: e escrever na tela
 
-    **Este teste é mesmo fácil.**
+**Este teste é mesmo fácil.**
 
 Como o case de entrada não tem _break_, continua pelo próximo case e escreve em seguida
 
-    **Ai de quem diga o contrário...**
+**Ai de quem diga o contrário...**
 
 A seguir aparece a instrução _return_, que termina a execução da função.
 Assim, a saída da chamada da função **tiro(1)** é:
 
-    **Este teste é mesmo fácil.**
-    **Ai de quem diga o contrário...**
+**Este teste é mesmo fácil.**
+**Ai de quem diga o contrário...**
 
 b) tiro(3)
 
 Entra-se no _switch_ pelo case 3: e escreve-se
 
-    **Estou no Tiro e x =3**
+**Estou no Tiro e x =3**
 
 Em seguida vou invocar a função liro com o valor 3. Repare que a instrução x++ envia primiero o valor de x(x=3) para a função liro, e só então é que incrementa a variável x na função tiro. Dessa forma a função liro recebe o valor 3, e não 4, como se poderia pensar erroneamente.
 
@@ -161,7 +161,7 @@ x++ indica que se quer usar o valor de x, e só depois de usá-lo é que ele vai
 
 Vamos então executar a função liro(3), que vai escrever
 
-    **Eu percebo HIMALAIAS de C**
+**Eu percebo HIMALAIAS de C**
 
 Em seguida aparece um _break_ que faz terminar o _switch_, embora ainda existam mais instruções para o referido _case_. Estas, contudo, nunca são executadas porque aparecem escritas depois da instrução _break_ (provavelmente o compilador avisará que existe código que nunca será alcançado).
 
@@ -169,8 +169,8 @@ Depois de sair de função liro(3) voltamos ao local imediatamente seguinte à s
 
 Assim, a saída apresentada na tela é
 
-    **Estou no Tiro e x =3**
-    **Eu percebo HIMALAIAS de C**
+**Estou no Tiro e x =3**
+**Eu percebo HIMALAIAS de C**
 
 c) liro(2)
 
@@ -180,7 +180,7 @@ d) liro(4)
 
 Entra pelo _case 4_: e escreve
 
-    **Não percebo nada disto**
+**Não percebo nada disto**
 
 Em seguida chamada a própia função (chamada dita Recursiva) e envia o valor 2.
 
@@ -190,29 +190,29 @@ Vota à instrução imediatamente a seguinte à chamada liro(2) e executa a inst
 
 A saída dessa chamada é, assim,
 
-    **Não percebo nada disto**
+**Não percebo nada disto**
 
 e) liro(5)
 
 A invocação da função liro com o valor 5, que não existe no switch, vai fazer com que o código a executar seja o que se encontra no _default_. Dessa forma, a função vai escrever na tela
 
-    **Aqui estou eu mais uma vez**
+**Aqui estou eu mais uma vez**
 
 Em seguida, vai chamar a função tiro enviando 5(e não 4, pelas razões antes apresentadas para o x++).
 
 Ora, o tiro(5) vai igualmente entrar pelo default respectivo e escrever
 
-    **Entrei pelo default**
+**Entrei pelo default**
 
 Chamando em seguida a função liro(5), que corresponde à chamada inicial, sendo todo o processo repetido indefinidamente.
 
 Assim, a saída do programa é:
 
-    **Aqui estou eu mais uma vez**
-    **Entrei pelo default**
-    **Aqui estou eu mais uma vez**
-    **Entrei pelo default**
-    **Aqui estou eu mais uma vez**
-    **Entrei pelo default**
+**Aqui estou eu mais uma vez**
+**Entrei pelo default**
+**Aqui estou eu mais uma vez**
+**Entrei pelo default**
+**Aqui estou eu mais uma vez**
+**Entrei pelo default**
 
 (... laço infinito em que repete as duas linhas ...)
