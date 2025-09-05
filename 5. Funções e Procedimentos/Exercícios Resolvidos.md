@@ -141,7 +141,7 @@ Ao invocar a função _tiro_ com o argumento 1, o _switch_ vai entrar pelo _case
 
 Como o case de entrada não tem _break_, continua pelo próximo case e escreve em seguida
 
-    _Ai de quem diga o contrário...
+    Ai de quem diga o contrário...
 
 A seguir aparece a instrução _return_, que termina a execução da função.
 Assim, a saída da chamada da função tiro(1) é:
