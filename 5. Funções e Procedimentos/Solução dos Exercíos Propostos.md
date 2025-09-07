@@ -120,9 +120,11 @@ long int num(int n_horas, char tipo)
     case 'h':
     case 'H':
         return (long)n_horas;
+        break;
     case 'm':
     case 'M':
         return (long)n_horas * 60;
+        break;
     default:
         return (long)n_horas * 60 * 60;
     }
@@ -268,5 +270,93 @@ int is_square(int x, int y)
 {
     return x == y * y;
 
+}
+```
+
+13.
+
+```c
+int Minus(int valor)
+{
+    if (valor < 0)
+        return valor;
+    else
+        return -valor;
+}
+```
+
+ou
+
+```c
+int Minus(int valor)
+{
+    if (valor < 0)
+        return valor;
+    return -valor;
+}
+```
+
+ou
+
+```c
+int Minus(int valor)
+{
+    return -abs(valor); /* Usando a função abs escrita anteriormente */
+}
+```
+
+14.
+
+```c
+int is_special(int x)
+{
+    return 2 * x == x * x;
+}
+```
+
+15.
+
+```c
+int Cubo(int x)
+{
+    return x * x * x;
+}
+```
+
+16.
+
+```c
+int IsVogal(char ch)
+{
+    return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+}
+```
+
+ou
+
+```c
+int IsVogal(char ch)
+{
+    ch = toupper(ch);
+    return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+}
+```
+
+ou
+
+```c
+int IsVogal(char ch)
+{
+    switch (tolower(ch))
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        return 1;
+    default:
+        return 0;
+    }
 }
 ```
