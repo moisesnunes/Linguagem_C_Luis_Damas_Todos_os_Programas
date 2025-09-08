@@ -117,7 +117,7 @@ void Pong(int x)
     {
     case 1:
     case 2:
-        Ping(x);
+        Ping(x); 
     case 3:
         j = 5;
         j++;
