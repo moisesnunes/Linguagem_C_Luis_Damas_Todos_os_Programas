@@ -9,12 +9,19 @@ Em C as _strings_ não podem ser manipuladas diretamente(atribuídas, concatenad
 No entanto, existe um conjunto _standard_ de funções que permite a sua manipulação. As funções mais utilizadas são:
 
 **Strlen** _Devolve o comprimento de uma string_
+
 **Strcpy** _Copia uma string para outra_
+
 **Strcat** _Concatenação de Strings_
+
 **Strcmp** _Comparação de Strings com ignore case_
+
 **Strchr** _Procura um caractere numa string_
+
 **Strstr** _Procura uma string dentro de outra_
+
 **Strlwr** _Converte todos os caracteres de uma string para minúsculas_
+
 **Strupr** _Converte todos os caracteres de uma string para maiúsculas_
 
 e estão presentes em todos os compiladores (exceto _strlwr_ e _strupr_).

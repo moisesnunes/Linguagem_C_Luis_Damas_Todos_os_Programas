@@ -83,4 +83,4 @@ char *strupr(char *s)
 }
 ```
 
-**Nota**: A resolução dessa função utiliza a função **toupper**, o que torna necessário incluir o arquivo ctype.h fazendo #include <ctype.h>
+**Nota**: A resolução dessa função utiliza a função **toupper**, o que torna necessário incluir o arquivo ctype.h fazendo #include <ctype.h>.
