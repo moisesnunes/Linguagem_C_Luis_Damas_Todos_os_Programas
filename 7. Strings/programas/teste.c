@@ -1,9 +1,11 @@
-char *repeticoes(char *s)
+char *wordupr(char *s)
 {
-    int i, j;
-    for (i = j = 0; s[i] != '\0'; i++)
-        if (strcountc(s, s[i]) > 1) /* Ocorre mais que 1 vez */
-            s[j++] = s[i];
-    s[j] = '\0';
+    int i;
+    s[0] = toupper(s[0]); /* O primeiro fica sempre em maiúscula */
+    for (i = 1; s[i - 1] != '\0'; i++)
+        if (s[i - 1] == ' ') /* Se o caractere anterior for um espaço */
+            s[i] = toupper(s[i]);
+        else
+            s[i] = tolower(s[i]);
     return s;
 }
