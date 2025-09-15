@@ -15,7 +15,7 @@ strcounta("quize (15) abacates)     => 14
 ```
 
 - 2.2
-  **char \*int_str(char \*s)**
+  **char \*init_str(char \*s)**
 
 Torna a string _s_ vazia.
 
@@ -55,17 +55,19 @@ Faz o mesmo que a função strcmp, mas realiza a comparação ignorando se os ca
 3. Implemente as seguites funções retiradas de enunciados de exames.
 
 - 3.1
-  **char \*repeticoes(char \*s, int n)**
+
+**char \*repeticoes(char \*s)**
 
 Recebe uma string, retirando-lhe todos os caracteres que não se encontram repetidos.
 
 ```
-repeticoes("ALFACE")                => E
-repeticoes("ALTA FIDELIDADE")       => a
+repeticoes("ALFACE")                => "AA"
+repeticoes("ALTA FIDELIDADE")       => "ALAIDELIDADE"
 ```
 
 - 3.2
-  **char n_esimo(char \*s, int n)**
+
+**char n_esimo(char \*s, int n)**
 
 Devolve a n-ésimo caractere da string s.
 Nota: Supõe-se que n<=strlen(s).
@@ -76,7 +78,8 @@ n_esimo("EraUmaVez", 3);            => a
 ```
 
 - 3.3
-  **char \*strpack(char \*s)**
+
+**char \*strpack(char \*s)**
 
 Recebe uma string e compacta num único caractere qualquer o conjunto de caracteres repetidos consecutivos.
 
