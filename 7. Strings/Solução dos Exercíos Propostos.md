@@ -332,3 +332,93 @@ char *wordupr(char *s)
     return s;
 }
 ```
+
+- 3.15
+
+```c
+char *lower_upper(char *s)
+{
+    int i, existem_trocas = 1, len = strlen(s);
+    char tmp; /* Aux para a realização da troca de caracteres */
+
+    while (existem_trocas)
+    {
+        existem_trocas = 0;
+        for (i = 0; i < len - 1; i++)
+            if (isupper(s[i]) && islower(s[i]))
+            {
+                tmp = s[i];
+                s[i] = s[i + 1];
+                s[i + 1] = tmp;
+                existem_trocas = 1;
+            }
+    }
+    return s;
+}
+```
+
+- 3.16
+
+```c
+char *All_Big(char *s)
+{
+    int i, j;
+    for (i = j = 0; s[i] != '\0'; i++)
+        if (isupper(s[i]))
+            s[j++] = s[i];
+    s[j] = 0;
+    return s;
+}
+```
+
+- 3.17
+
+```c
+int Is_Len_Ok(char *string, int comprimento)
+{
+    return strlen(string) == comprimento;
+}
+```
+
+- 3.18
+
+```c
+int Is_Alfa_Digit(char *s)
+{
+    int i;
+    for (i = 0; s[i] != '\0'; i++)
+        if (i % 2 == 0)
+            if (!isalpha(s[i]))
+                return 0;
+            else if (!isdigit(s[i]))
+                return 0;
+    return 1;
+}
+```
+
+- 3.19
+
+```c
+char *Transform(char *s) /* Versão 1 */
+{
+    int i, len = strlen(s);
+    for (i = 0; i < len; i++)
+        if (i < len / 2)
+            s[i] = tolower(s[i]);
+        else
+            s[i] = toupper(s[i]);
+    return s;
+}
+
+char *Transform(char *s) /* Versão 2 */
+{
+    int i, len = strlen(s) - 1;
+    for (i = 0; i < len; i++, len--)
+    {
+        s[i] = tolower(s[i]);
+        s[len] = toupper(s[len]);
+    }
+    return s;
+}
+```
+4.
