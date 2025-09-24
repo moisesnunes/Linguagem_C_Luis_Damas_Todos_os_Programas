@@ -36,3 +36,18 @@ main()
         Sobrenome++; /* Pois estava apontado o espaço em branco */
     puts(Sobrenome);
 }
+
+char *strrcpy(char *dest, char *orig)
+{
+    int len;
+    for (len = strlen(orig); len >= 0; len--)
+        dest[len] = orig[len];
+    return dest;
+}
+
+char *strins(char *dest, char *orig)
+{
+    strrcpy(dest + strlen(orig), dest);
+    memcpy(dest, orig, strlen(orig));
+    return dest;
+}

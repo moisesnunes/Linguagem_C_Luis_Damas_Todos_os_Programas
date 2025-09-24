@@ -80,3 +80,35 @@ char *strstr(char *str1, char *str2)
     }
 }
 ```
+5.
+
+```c
+char *First_Vogal(char *s)
+{
+    const char vogais[] = "aeiou";
+    int i;
+    for (i = 0; s[i] != '\0'; i++)
+        if (strchr(vogais, tolower(s[i])) != NULL)
+            return &s[i];
+    return NULL;
+}
+```
+6.
+```c
+/* Copia os caracteres de orig para dest do fim para o princípio */
+
+char *strrcpy(char *dest, char *orig)
+{
+    int len;
+    for (len = strlen(orig); len >= 0; len--)
+        dest[len] = orig[len];
+    return dest;
+}
+
+char *strins(char *dest, char *orig)
+{
+    strrcpy(dest + strlen(orig), dest);
+    memcpy(dest, orig, strlen(orig));
+    return dest;
+}
+```
