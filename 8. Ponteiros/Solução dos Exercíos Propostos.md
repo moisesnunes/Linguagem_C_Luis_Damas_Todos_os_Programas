@@ -80,6 +80,7 @@ char *strstr(char *str1, char *str2)
     }
 }
 ```
+
 5.
 
 ```c
@@ -93,7 +94,9 @@ char *First_Vogal(char *s)
     return NULL;
 }
 ```
+
 6.
+
 ```c
 /* Copia os caracteres de orig para dest do fim para o princípio */
 
@@ -112,3 +115,110 @@ char *strins(char *dest, char *orig)
     return dest;
 }
 ```
+
+Na resolução deste exercício foi necessáro implementar um função que realizasse a cópia do final para o íncio da string, uma vez que ela poderá ter que ser copiada para cima dela própia.
+
+Começa-se por copiar a string existente no destino para a posição **strlen(orig), pois a string origem irá ocupar **strlen(orig) caracteres na string **dest**.
+
+Depois usa-se a função _memcpy_, e não a função _strcpy_ para copiar a string orig para dest, porque a função memcpy não coloca o terminador '\0' que iria apagar o primeiro caractere da string dest anterior, terminando aí a strinhg resultado.
+
+7.
+
+```
+a) pv = v;      /* ou pv = &v[0]; */
+   ppv = &pv;
+```
+
+- b)
+
+|     |  v  |     |     |     |     |     |     | pv  |     |     | ppv |     |     |     |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | --- | --- | --- | --- | --- | --- |
+|     | 10  | 20  | 30  | 40  | 50  |     |     | 100 |     |     | 500 |     |     |     |
+|     | 100 | 101 | 102 | 103 | 104 | ... | ... | 500 | ... | ... | 700 |     |     |     |
+
+A única restrição em relação aos endereços a serem usados é que todos os elementos do vetor fiquem em posições contíguas de memória.
+
+- c)
+
+```c
+printf("%c %c %c\n", v[0]      , *pv        , **ppv        );
+printf("%c %c %c\n", v[1]      , *(pv+1)    , *(*ppv+1)    );
+printf("%c %c %c\n", v[2]      , pv[3]      , (*ppv)[4]    );
+printf("%d %d %d\n", *v-1      , *(pv+1)-1  , *(*ppv+2)-1  );
+```
+
+- d) Colocaria na tela(usando os enderços apresentados em b)
+
+```
+100 500 700
+```
+
+8.
+
+```c
+char *StrDelUpper(char *s)
+{
+    char *prim, *ptr;
+    prim = ptr = s;
+
+    while (*s) /* Equivalente a while (s*!='\0') */
+    {
+        if (!isupper(*s))
+            *ptr++ = *s;
+        s++;
+    }
+    *ptr = '\0';
+    return prim;
+}
+```
+
+9.
+
+```c
+char *StrDelStr(char *s1, char *s2)
+{
+    char *loc = strstr(s1, s2);
+    if (loc != NULL) /* Se s2 existir em s1 */
+        strcpy(loc, loc + strlen(s2));
+    return s1;
+}
+```
+
+10.
+
+- a)
+  px = &x;
+  py = &y;
+
+|     |     | 106 |
+| :-: | :-: | :-: |
+|     |     | 105 |
+|     |     | 104 |
+|  y  |  3  | 103 |
+| py  | 103 | 102 |
+| px  | 100 | 101 |
+|  x  |  2  | 100 |
+
+- b)
+
+```
+printf("%d %d\n",   x,   y);    => 2    3
+printf("%d %d\n", *px, *py);    => 2    3
+printf("%d %d\n", &px, &py);    => 101 102
+```
+
+- c)
+  Se ele fizer px = py então
+
+|     |     | 106 |
+| :-: | :-: | :-: |
+|     |     | 105 |
+|     |     | 104 |
+|  y  |  3  | 103 |
+| py  | 103 | 102 |
+| px  | 100 | 101 |
+|  x  |  2  | 100 |
+
+printf("%d %d %d %d %d %d %d %d", x, &x, px, *px, y, &y, py, *py)
+
+2 100 103 3 3 103 103 3

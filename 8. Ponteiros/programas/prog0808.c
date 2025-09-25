@@ -37,17 +37,10 @@ main()
     puts(Sobrenome);
 }
 
-char *strrcpy(char *dest, char *orig)
+char *StrDelStr(char *s1, char *s2)
 {
-    int len;
-    for (len = strlen(orig); len >= 0; len--)
-        dest[len] = orig[len];
-    return dest;
-}
-
-char *strins(char *dest, char *orig)
-{
-    strrcpy(dest + strlen(orig), dest);
-    memcpy(dest, orig, strlen(orig));
-    return dest;
+    char *loc = strstr(s1, s2);
+    if (loc != NULL) /* Se s2 existir em s1 */
+        strcpy(loc, loc + strlen(s2));
+    return s1;
 }
