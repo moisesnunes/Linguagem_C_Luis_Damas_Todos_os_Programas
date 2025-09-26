@@ -36,11 +36,3 @@ main()
         Sobrenome++; /* Pois estava apontado o espaço em branco */
     puts(Sobrenome);
 }
-
-char *StrDelStr(char *s1, char *s2)
-{
-    char *loc = strstr(s1, s2);
-    if (loc != NULL) /* Se s2 existir em s1 */
-        strcpy(loc, loc + strlen(s2));
-    return s1;
-}
