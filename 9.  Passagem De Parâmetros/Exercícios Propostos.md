@@ -2,9 +2,11 @@
 
 1. Implemente as seguintes funções que manipulam apenas valores inteiros:
 
-**iszero** - Verifica se o parâmetro _n_ é ou não zero.
-**add1** - Adiciona 1 ao própio parâmetro _n_.
-**zero** - Coloca zero no parâmetro _n_.
+```
+iszero - Verifica se o parâmetro _n_ é ou não zero.
+add1 - Adiciona 1 ao própio parâmetro _n_.
+zero - Coloca zero no parâmetro _n_.
+```
 
 2. Implemente a função **Ler_Inteiro** que devolve o inteiro lido. O parâmetro _prompt_ contém a mensagem que solicita o inteiro ao usúario. Deverá receber apenas inteiros superiores ou iguais a zero.
 
@@ -42,10 +44,12 @@ Todas as variáveis de ambiente têm um nome seguido do sinal de igual e do valo
 
 **Exemplo**:
 
-**COMSPEC=E:\WINDOWS\COMMAND.COM**
-**PROMPT=$p$g**
-**PATH=E:\WINDOWS;E:\WINDOWS\COMMAND;C:\DOSFAX;C:\DOS;C:\BATS**
-**TEMP=C:\TMP**
+```
+COMSPEC=E:\WINDOWS\COMMAND.COM
+PROMPT=$p$g
+PATH=E:\WINDOWS;E:\WINDOWS\COMMAND;C:\DOSFAX;C:\DOS;C:\BATS
+TEMP=C:\TMP
+```
 
 Implemente um programa que liste todas as variáveis de ambiente existentes no seu computador.
 
