@@ -55,8 +55,9 @@ Preencha o quadro seguinte indicando os valores em falta, recorrendo sempre a ex
 
 Observação: Coloque aspas e aspas simples para diferenciar entre strings e caracteres.
 
-| a) argc               |      |
+|                       |      |
 | --------------------- | ---- |
+| a) argc               |      |
 | b) argv[3]            |      |
 | c) argv[argc-2]       |      |
 | d) \*argv[2]          |      |
@@ -103,3 +104,55 @@ toupper(argv[3][0])+1 ou toupper(*argv[3])+1
   \*\*argv - corresponde ao primeiro caractere de \*argv, isto é,o primeiro caractere da primeira string - 'k'.
 
 \> Implemente a função Pot que devolve o valor de x^n
+
+```
+float Pot(float x, int n)
+```
+
+x^0 = 1.0
+x^n = x\*x\* ... \*x(n vezes)
+
+Vamos resolver este problema de forma recursiva.
+
+Reparar que n x^n = x \* x^n-1
+
+```
+float Pot(float x, int n)
+{
+    if (n == 0)
+        return 1.0;
+    else
+        return x * Pot(x, n - 1);
+}
+```
+
+\> Implemente, de forma recursiva, a função Exp que é definida através da seguinte fórmula:
+
+![](./img/img1.png)
+
+Sugestão: Utilize a função Pot implementada no exemplo anterior.
+
+```
+float Exp(float x, int n, float t)
+{
+    if (n < 1)
+        return 0;
+    else
+        return x/Plot(1+t,n) + Exp(x,n-1,t);
+}
+```
+
+\> Implemente recursivamente a função Puts que coloca na tela a _string_ recebida por parâmetro seguida de um NewLine.
+
+```
+char *Puts(char *s)
+{
+    if (*s == '\0')
+        putchar('\n');
+    else
+        {
+            putchar(*s); /* Escrever o char corrente */
+            Puts(s+1);   /* Escrever o resto da string */
+        }
+}
+```
