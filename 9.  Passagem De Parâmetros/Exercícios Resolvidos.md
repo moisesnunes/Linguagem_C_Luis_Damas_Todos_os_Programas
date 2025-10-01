@@ -116,7 +116,7 @@ Vamos resolver este problema de forma recursiva.
 
 Reparar que n x^n = x \* x^n-1
 
-```
+```c
 float Pot(float x, int n)
 {
     if (n == 0)
@@ -132,7 +132,7 @@ float Pot(float x, int n)
 
 Sugestão: Utilize a função Pot implementada no exemplo anterior.
 
-```
+```c
 float Exp(float x, int n, float t)
 {
     if (n < 1)
@@ -144,7 +144,7 @@ float Exp(float x, int n, float t)
 
 \> Implemente recursivamente a função Puts que coloca na tela a _string_ recebida por parâmetro seguida de um NewLine.
 
-```
+```c
 char *Puts(char *s)
 {
     if (*s == '\0')
