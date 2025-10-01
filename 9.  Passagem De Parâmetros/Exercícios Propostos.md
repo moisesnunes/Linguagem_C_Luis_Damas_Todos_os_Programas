@@ -10,7 +10,9 @@ zero - Coloca zero no parâmetro _n_.
 
 2. Implemente a função **Ler_Inteiro** que devolve o inteiro lido. O parâmetro _prompt_ contém a mensagem que solicita o inteiro ao usúario. Deverá receber apenas inteiros superiores ou iguais a zero.
 
-**int Ler_Inteiro(char \*prompt)**
+```
+int Ler_Inteiro(char \*prompt)
+```
 
 3. Transforme a função anterior de tal forma que o inteiro seja colocado num parâmetro enviado ao **procedimento** Ler_Inteiro.
 
@@ -55,4 +57,4 @@ Implemente um programa que liste todas as variáveis de ambiente existentes no s
 
 Atenção: Esta possibilidade pode não estar presente no compilador que você está usando.
 
-9. Escreva um programa semelhante ao anterior em que sejam apresentados apenas os valores das variáveis de ambiente(à direita do sinal =).
+9. Escreva um programa semelhante ao anterior em que sejam apresentados apenas os valores das variáveis de ambiente(à direita do sinal = ).
