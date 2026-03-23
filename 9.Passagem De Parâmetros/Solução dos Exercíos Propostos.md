@@ -188,6 +188,7 @@ int Exp(int n, int a)
         res += (a+i/n) * (a+i/n );
     return res;
 }
+```
 
 8. 
 
